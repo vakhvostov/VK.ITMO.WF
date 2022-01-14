@@ -121,7 +121,7 @@ namespace VK.CSW.L12
         private System.Windows.Forms.ToolStripMenuItem WindowMenuItem;
         private System.Windows.Forms.ToolStripMenuItem WindowCascadeMenuItem;
         private System.Windows.Forms.ToolStripMenuItem WindowsTileMenuItem;
-        private System.Windows.Forms.MenuStrip MdiMenu;
+        protected System.Windows.Forms.MenuStrip MdiMenu;
     }
 }
 
