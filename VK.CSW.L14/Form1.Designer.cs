@@ -34,9 +34,10 @@ namespace VK.CSW.L14
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(57, 87);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.Location = new System.Drawing.Point(360, 380);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(80, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "greenpeace";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,12 +48,11 @@ namespace VK.CSW.L14
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 800);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GreenForm";
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GreenForm_Load);
             this.ResumeLayout(false);
 

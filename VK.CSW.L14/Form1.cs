@@ -26,7 +26,7 @@ namespace VK.CSW.L14
         {
             System.Drawing.Drawing2D.GraphicsPath myPath =
                 new System.Drawing.Drawing2D.GraphicsPath();
-            myPath.AddPolygon(new Point[] { new Point(0, 100), new Point(100, 200), new Point(200, 100), new Point(100, 0) });
+            myPath.AddPolygon(new Point[] { new Point(0, 400), new Point(400, 800), new Point(800, 400), new Point(400, 0) });
             Region myRegion = new Region(myPath);
             this.Region = myRegion;
         }

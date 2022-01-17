@@ -15,6 +15,7 @@ namespace VK.CSW.L12
         public ParentForm()
         {
             InitializeComponent();
+            spData.Text = Convert.ToString(System.DateTime.Today.ToLongDateString());
         }
 
         private void ExitMenuItem_Click(object sender, EventArgs e)
@@ -42,5 +43,25 @@ namespace VK.CSW.L12
         }
 
         private int openDocs = 0;
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            ChildForm newChild = new ChildForm();
+            newChild.MdiParent = this;
+            newChild.Show();
+            newChild.Text = newChild.Text + " " + ++openDocs;
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
+            spWin.Text = "Windows are horizontal";
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
+            spWin.Text = "Windows are cascade";
+        }
     }
 }

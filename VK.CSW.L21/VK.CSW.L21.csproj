@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A856368F-E662-46AD-875A-D2F80A23D16E}</ProjectGuid>
+    <ProjectGuid>{5232B925-8374-46DA-8DC6-5C983143951E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>VK.CSW.L12</RootNamespace>
-    <AssemblyName>VK.CSW.L12</AssemblyName>
+    <RootNamespace>VK.CSW.L21</RootNamespace>
+    <AssemblyName>VK.CSW.L21</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,34 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChildForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForm.Designer.cs">
-      <DependentUpon>ChildForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ParentForm.Designer.cs">
-      <DependentUpon>ParentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChildForm.resx">
-      <DependentUpon>ChildForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ParentForm.resx">
-      <DependentUpon>ParentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,7 +65,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,15 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon_X.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon_T.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon_C.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
